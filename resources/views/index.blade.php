@@ -7,110 +7,114 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
     <body>
       <div class="container">
-        <div class="col-12">
-          <div class="row my-5">
-            <h1 class="col-12">Tickets</h1>
-            <div class="col-4">
-              @if ($data->ctickets==0)
-                <h3>Crear Tickets<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Crear Tickets<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->mtickets==0)
-                <h3>Modificar Tickets<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Modificar Tickets<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->etickets==0)
-                <h3>Eliminar Tickets<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Eliminar Tickets<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="row my-5">
-            <h1 class="col-12">Anticipos</h1>
-            <div class="col-4">
-              @if ($data->canticipos==0)
-                <h3>Crear Anticipos<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Crear Anticipos<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->manticipos==0)
-                <h3>Modificar Anticipos<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Modificar Anticipos<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->eanticipos==0)
-                <h3>Eliminar Anticipos<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Eliminar Anticipos<span class="badge badge-success">ALIVE</span></h3>
-              @endif
+        <h1>StatusWebPageCaptio</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="row mt-3 mb-5">
+              <h1 class="col-12" style="color:#2899c1;">Tickets <i class="fas fa-file-image" style="color:#f9ba14"></i></h1>
+              <div class="col-4">
+                @if ($data->ctickets==0)
+                  <h3>Crear Tickets<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Crear Tickets<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->mtickets==0)
+                  <h3>Modificar Tickets<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Modificar Tickets<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->etickets==0)
+                  <h3>Eliminar Tickets<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Eliminar Tickets<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="row my-5">
-            <h1 class="col-12">Viajes</h1>
-            <div class="col-4">
-              @if ($data->cviajes==0)
-                <h3>Crear Viajes<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Crear Viajes<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->mviajes==0)
-                <h3>Modificar Viajes<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Modificar Viajes<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->eviajes==0)
-                <h3>Eliminar Viajes<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Eliminar Viajes<span class="badge badge-success">ALIVE</span></h3>
-              @endif
+          <div class="col-12">
+            <div class="row my-5">
+              <h1 class="col-12"style="color:#2899c1;">Anticipos <i class="fas fa-money-bill-alt " style="color:#f9ba14"></i></h1>
+              <div class="col-4">
+                @if ($data->canticipos==0)
+                  <h3>Crear Anticipos<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Crear Anticipos<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->manticipos==0)
+                  <h3>Modificar Anticipos<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Modificar Anticipos<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->eanticipos==0)
+                  <h3>Eliminar Anticipos<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Eliminar Anticipos<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="row my-5">
-            <h1 class="col-12">Informes</h1>
-            <div class="col-4">
-              @if ($data->cinformes==0)
-                <h3>Crear Informe<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Crear Informe<span class="badge badge-success">ALIVE</span></h3>
-              @endif
+          <div class="col-12">
+            <div class="row my-5">
+              <h1 class="col-12" style="color:#2899c1;">Viajes <i class="fas fa-plane"style="color:#f9ba14"></i></h1>
+              <div class="col-4">
+                @if ($data->cviajes==0)
+                  <h3>Crear Viajes<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Crear Viajes<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->mviajes==0)
+                  <h3>Modificar Viajes<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Modificar Viajes<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->eviajes==0)
+                  <h3>Eliminar Viajes<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Eliminar Viajes<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
             </div>
-            <div class="col-4">
-              @if ($data->minformes==0)
-                <h3>Modificar Informe<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Modificar Informe<span class="badge badge-success">ALIVE</span></h3>
-              @endif
-            </div>
-            <div class="col-4">
-              @if ($data->einformes==0)
-                <h3>Eliminar Informe<span class="badge badge-danger">DIE</span></h3>
-              @else
-                <h3>Eliminar Informe<span class="badge badge-success">ALIVE</span></h3>
-              @endif
+          </div>
+          <div class="col-12">
+            <div class="row my-5">
+              <h1 class="col-12" style="color:#2899c1;">Informes <i class="fas fa-file-alt"style="color:#f9ba14"></i></h1>
+              <div class="col-4">
+                @if ($data->cinformes==0)
+                  <h3>Crear Informe<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Crear Informe<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->minformes==0)
+                  <h3>Modificar Informe<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Modificar Informe<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
+              <div class="col-4">
+                @if ($data->einformes==0)
+                  <h3>Eliminar Informe<span class="badge badge-danger">DIE</span></h3>
+                @else
+                  <h3>Eliminar Informe<span class="badge badge-success">ALIVE</span></h3>
+                @endif
+              </div>
             </div>
           </div>
         </div>
